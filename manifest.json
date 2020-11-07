@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Block Twitch Ads",
+    "version": "1.0",
+    "description": "Attempts to block ads on Twitch.tv",
+    "permissions": [
+        "*://*.twitch.tv/*",
+        "*://*.ttvnw.net/*",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": [
+        "blank.ts"
+    ]
+}
